@@ -1,0 +1,102 @@
+body {
+    background: url("../Images/bg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: auto;
+}
+
+.card-body img {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.col-md-4:nth-child(1) .card .card-body {
+    background: url("..//Images/terra-armor.webp"), url("../Images/bg2.jpg"); 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    background-size: contain, cover;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.col-md-4:nth-child(1) .card .card-body:hover {
+    background: url("..//Images/terra.webp"), url("../Images/bg2.jpg"); 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    background-size: contain, cover;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+
+    & img {
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+}
+
+.col-md-4:nth-child(2) .card .card-body {
+    background: url("..//Images/ventus-armor.png"), url("../Images/bg2.jpg"); 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    background-size: contain, cover;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.col-md-4:nth-child(2) .card .card-body:hover {
+    background: url("..//Images/ventus.webp"), url("../Images/bg2.jpg"); 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    background-size: contain, cover;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen;
+
+    & img {
+        opacity: 1;
+        transition: all 0.3s;
+    }
+}
+
+.col-md-4:nth-child(3) .card .card-body {
+    background: url("..//Images/aqua-armor.webp"), url("../Images/bg2.jpg"); 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    background-size: contain, cover;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.col-md-4:nth-child(3) .card .card-body:hover {
+    background: url("..//Images/aqua.webp"), url("../Images/bg2.jpg"); 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    background-size: contain, cover;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+    & img {
+        opacity: 1;
+        transition: all 0.3s;
+    }
+}
+
+.modal-body {
+    color: #ffffff;
+    background: url("..//Images/modal-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1890px) {
+    body {
+        height: 120vh;
+    }
+}
